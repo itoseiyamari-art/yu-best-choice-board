@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<title>優ベストチョイス</title>
+<script type="application/json" id="shops-data">
+[
+ {"id":"s01","name":"マルショーラーメン","reading":"秋葉原・ヨドバシAkiba 8F","emoji":"🍜","genre":"ラーメン・つけ麺","area":"東京","spot":"秋葉原","address":"東京都千代田区神田花岡町1-1 ヨドバシカメラ マルチメディアAkiba 8F","station":"秋葉原駅 徒歩1分","memo":"特製つけ麺1,230円＋卵黄トッピングが名物。ライス1杯無料で〆まで最高／11:00〜23:00 無休","fb":"https://www.facebook.com/share/r/18EbJ3RMRE/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1310/A131001/13289597/"},
+ {"id":"s02","name":"遷 sen","reading":"池袋・つけ麺専門店","emoji":"🍜","genre":"ラーメン・つけ麺","area":"東京","spot":"池袋","address":"東京都豊島区西池袋1-24-8","station":"池袋駅 徒歩1分","memo":"北海道産小麦「春よ恋」の自家製麺×濃厚魚介豚骨。大盛りまで同一料金／11:00〜22:00・現金のみ⚠️","fb":"https://www.facebook.com/share/r/1GrKXv59Gd/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1305/A130501/13313917/"},
+ {"id":"s03","name":"鴨to葱 新宿西口店","reading":"かもとねぎ","emoji":"🦆","genre":"ラーメン・つけ麺","area":"東京","spot":"新宿","address":"東京都新宿区西新宿7-9-12","station":"新宿西口駅 徒歩3分","memo":"鴨と葱と水だけのスープ。葱は3種から選べる。親子丼も必食／朝10時〜翌4時で〆にも◎","fb":"https://www.facebook.com/share/r/19SXV9L6y1/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1304/A130401/13321726/"},
+ {"id":"s04","name":"WISE MAN COFFEE","reading":"ワイズマンコーヒー（本店：武蔵小金井）","emoji":"🍞","genre":"フレンチトースト","area":"東京","spot":"武蔵小金井","address":"東京都小金井市前原町3-40-1（武蔵小金井駅南口店）","station":"武蔵小金井駅 すぐ","memo":"バニラアイス×キャラメルのフレンチトーストが絶品。新宿高島屋B1への期間限定出店（8/12〜18）は終了、本店で味わえます","note":"新宿出店は終了","fb":"https://www.facebook.com/share/r/19YpNiPKnG/?mibextid=wwXIfr","official":"https://www.wisemancoffee.com/"},
+ {"id":"s05","name":"THE FRONT ROOM","reading":"ザ フロント ルーム 丸の内","emoji":"🥞","genre":"フレンチトースト","area":"東京","spot":"丸の内","address":"東京都千代田区丸の内2-4-1 丸ビル1F","station":"東京駅 徒歩6分（二重橋前すぐ）","memo":"「飲める」ふわとろフレンチトースト（ホイップバター＆メープル 1,705円）／8:00〜22:00","fb":"https://www.facebook.com/share/r/1Fjgy7KWNA/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1302/A130201/13275247/","reserve":"https://www.tablecheck.com/en/thefrontroom"},
+ {"id":"s06","name":"御殿山 あいにく","reading":"ごてんやま あいにく","emoji":"🥩","genre":"焼肉","area":"東京","spot":"品川・高輪","address":"東京都港区高輪4-18-19","station":"品川駅 徒歩15分（駅からタクシー代無料・領収書提示）","memo":"芸能人も通う隠れ家焼肉。2週間熟成の牛タン＆「口福たまご」。ランチ3,300円／ディナー9,800円＋税〜／日曜定休","fb":"https://www.facebook.com/share/r/1EmTmnh1Tz/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1314/A131403/13255793/"},
+ {"id":"s07","name":"400℃ PIZZA TOKYO","reading":"よんひゃくど ピザ トーキョー","emoji":"🍕","genre":"ピザ","area":"東京","spot":"神楽坂・飯田橋","address":"東京都新宿区若宮町13-1 kif annex 1F","station":"飯田橋駅 徒歩8分","memo":"食べログピザ百名店・ミシュランビブグルマン。予算3,000円〜／完全予約制（TableCheck・2日前12時から）","fb":"https://www.facebook.com/share/r/1EXg7A9fxb/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1309/A130905/13294495/","reserve":"https://www.tablecheck.com/ja/shops/400-yonhyakudo-tokyo/reserve"},
+ {"id":"s08","name":"するり 新宿本店","reading":"SURURI","emoji":"🍢","genre":"和食・食堂・居酒屋","area":"東京","spot":"新宿・歌舞伎町","address":"東京都新宿区歌舞伎町1-2-9 シタディーンセントラル新宿東京 2F","station":"新宿三丁目駅 徒歩5分／JR新宿駅東口 徒歩8分","memo":"居酒屋×すき焼き×うどん。ランチ¥1,000〜／ディナー¥6,000〜8,000","fb":"https://www.facebook.com/share/r/1DnA8ad9uY/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1304/A130401/13145843/"},
+ {"id":"s09","name":"赤坂明徳 米Lab・肉Lab","reading":"あかさかみょうとく（山口の名店が福岡初進出）","emoji":"🍚","genre":"和食・食堂・居酒屋","area":"福岡","spot":"赤坂","address":"福岡県福岡市中央区赤坂1-13-8 赤坂ウイング1F","station":"赤坂駅 徒歩1分","memo":"日本一の炊き立て土鍋ご飯「米Lab」×完全予約制8席の和牛割烹「肉Lab」。白舎利膳1,560円／和牛割烹コース12,800円／10:00〜22:00・不定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/19X8JpL4PZ/?mibextid=wwXIfr","official":"https://akasaka.myotoku.jp/","reserve":"https://www.tablecheck.com/ja/akasaka-myotoku"},
+ {"id":"s10","name":"春陽軒","reading":"しゅんようけん（箱崎）","emoji":"🍚","genre":"町中華","area":"福岡","spot":"箱崎","address":"福岡県福岡市東区箱崎1-34-9","station":"箱崎宮前駅 すぐ","memo":"福岡最強焼きめし5選①。50年愛される「奇跡のやきめし」税込800円／月・火定休","ig":"https://www.instagram.com/reel/DcXyxZYSpIy/","tabelog":"https://tabelog.com/fukuoka/A4001/A400201/40006586/"},
+ {"id":"s11","name":"中華料理シャン","reading":"住吉の町中華","emoji":"🦐","genre":"町中華","area":"福岡","spot":"博多・住吉","address":"福岡県福岡市博多区住吉4-15-5","station":"渡辺通駅 徒歩圏","memo":"福岡最強焼きめし5選②。エビがたっぷりの「エビ焼飯」税込950円／水・日・祝定休","ig":"https://www.instagram.com/reel/DcXyxZYSpIy/","tabelog":"https://tabelog.com/fukuoka/A4001/A400103/40022270/"},
+ {"id":"s12","name":"大ちゃんラーメン","reading":"南区野間の老舗","emoji":"🍚","genre":"町中華","area":"福岡","spot":"南区野間","address":"福岡県福岡市南区野間2-6-95","station":"高宮駅 車5分","memo":"福岡最強焼きめし5選③。焼きめし税込650円、ちゃんぽんも名物／11:00〜21:00・火曜定休","ig":"https://www.instagram.com/reel/DcXyxZYSpIy/","tabelog":"https://tabelog.com/fukuoka/A4001/A400202/40006711/"},
+ {"id":"s13","name":"中華橋本","reading":"ちゅうかはしもと（白金）","emoji":"🍚","genre":"町中華","area":"福岡","spot":"薬院・白金","address":"福岡県福岡市中央区白金1-1-27","station":"薬院駅 徒歩2分","memo":"福岡最強焼きめし5選④。老夫婦が営むカウンター11席の名店。やきめし900円／日・祝定休","ig":"https://www.instagram.com/reel/DcXyxZYSpIy/","tabelog":"https://tabelog.com/fukuoka/A4001/A400104/40031483/"},
+ {"id":"s14","name":"博多川端どさんこ","reading":"上川端商店街・昭和45年創業","emoji":"🍜","genre":"町中華","area":"福岡","spot":"博多・川端","address":"福岡県福岡市博多区上川端町4-229","station":"櫛田神社前駅 すぐ","memo":"福岡最強焼きめし5選⑤。みそラーメン×焼きめし（税込800円）の黄金コンビ／火曜・第3月曜定休","ig":"https://www.instagram.com/reel/DcXyxZYSpIy/","tabelog":"https://tabelog.com/fukuoka/A4001/A400102/40000085/"},
+ {"id":"s15","name":"めし処 こづち","reading":"恵比寿で69年続く大衆食堂","emoji":"🍢","genre":"和食・食堂・居酒屋","area":"東京","spot":"恵比寿","address":"東京都渋谷区恵比寿1-7-6 陸中ビルハイツ1F","station":"恵比寿駅 徒歩3分","memo":"優さん新着！創業1957年・食べログ定食百名店。名物の肉豆腐×ごはんが最高／10:30〜18:00・日曜定休・予算¥1,000〜2,000","note":"優さん新着","fb":"https://www.facebook.com/share/r/1AdHfEDUtj/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1303/A130302/13001589/"},
+ {"id":"s16","name":"GOOD TIME SMOKES","reading":"グッドタイムスモークス","emoji":"🍔","genre":"バーガー・BBQ","area":"福岡","spot":"渡辺通","address":"福岡県福岡市中央区渡辺通3-6-32 佐竹会館A棟2号室","station":"渡辺通駅 徒歩3分","memo":"ブルックリン式スモークBBQの隠れ家。プルドポークバーガー1,600円／12:00〜14:30・18:00〜21:00／月・不定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/199scNswBM/?mibextid=wwXIfr"},
+ {"id":"s17","name":"宗楽","reading":"そうらく（EXILEも通う町中華）","emoji":"🍚","genre":"町中華","area":"東京","spot":"中目黒・池尻大橋","address":"東京都目黒区東山（中目黒駅・池尻大橋駅から徒歩7〜9分）","station":"中目黒駅 徒歩7分／池尻大橋駅 徒歩9分","memo":"LDH御用達で行列必至。ゴロッと焼豚チャーハン＋半ラーメンが鉄板。店内撮影ルールあり／日祝定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/1EDZHFTQKy/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1317/A131705/13134647/"},
+ {"id":"s18","name":"中華そば 喜長","reading":"きちょう（神田わいず系列）","emoji":"🍜","genre":"ラーメン・つけ麺","area":"東京","spot":"新橋","address":"東京都港区新橋3-22-3","station":"新橋駅 徒歩3分","memo":"黒いパンチ系つけ汁のチャーシュー竹の子つけそば1,380円。新橋の〆はここ／月〜土10:30〜24:00・日祝〜18:00・現金のみ食券制","note":"優さん新着","star":true,"fb":"https://www.facebook.com/share/r/19Qi6XN7aJ/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1301/A130103/13320108/"},
+ {"id":"s19","name":"赤坂大関 本店","reading":"あかさかおおぜき（炭火焼肉）","emoji":"🥩","genre":"焼肉","area":"東京","spot":"赤坂","address":"東京都港区赤坂3-18-12","station":"赤坂見附駅 徒歩2分","memo":"焼肉百名店。一頭買いの上一匹コース9,800円（2人用）で赤身からホルモンまで。〆の冷麺も◎／17:00〜23:30・無休","note":"優さん新着","fb":"https://www.facebook.com/share/r/1EBKHxydnA/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1308/A130801/13015197/"},
+ {"id":"s20","name":"焼肉たぬき","reading":"幡ヶ谷の実力派町焼肉","emoji":"🥩","genre":"焼肉","area":"東京","spot":"幡ヶ谷","address":"東京都渋谷区幡ヶ谷2-7-9 酒井ビル1F","station":"幡ヶ谷駅 徒歩2分","memo":"芝浦直送の鮮度抜群ハラミ・サガリ3,300円。味変の青唐タレと〆のもつ煮スリランカカレーまで美味い／予算5,000〜6,000円","note":"優さん新着","fb":"https://www.facebook.com/share/r/17P7DoLUNq/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1318/A131807/13301262/"},
+ {"id":"s21","name":"尚チャンラーメン","reading":"ちゃん系町中華の始祖","emoji":"🍚","genre":"町中華","area":"東京","spot":"新中野","address":"東京都中野区本町5-33-15","station":"新中野駅 徒歩7分","memo":"都内No.1との呼び声のしっとり濃いめチャーハン800円。中華丼も双璧。荻窪・高円寺「ちゃん系」の元祖／11:30〜22:00・月定休・現金のみ","note":"優さん新着","fb":"https://www.facebook.com/share/r/19JN8NdyN2/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1319/A131903/13006926/"},
+ {"id":"s22","name":"餃子の店 おけ以","reading":"おけい（1954年創業）","emoji":"🥟","genre":"町中華","area":"東京","spot":"飯田橋","address":"東京都千代田区富士見2-12-16","station":"飯田橋駅 徒歩3分","memo":"餃子百名店＆元ビブグルマンの老舗。餃子セット980円／平日17:00〜21:00・土は昼も／日・第3月・祝定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/19NVMKZfeq/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1309/A130905/13000410/"},
+ {"id":"s23","name":"銀座ふじ","reading":"湘南沖地蟹専門店ふじ月の銀座店・2026年8月オープン","emoji":"🦀","genre":"和食・食堂・居酒屋","area":"東京","spot":"銀座","address":"東京都中央区銀座6-7-7 ガーデンスクエア銀座第4ビル3F","station":"銀座駅 徒歩3分","memo":"約4kgの巨大イバラガニ・タカアシガニを目の前で捌く蟹尽くしコース29,800円〜。〆は蟹みそ×蟹身×いくらの贅沢丼。特別な日に／17:30〜22:00・日月定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/1FKhGhsLdk/?mibextid=wwXIfr","official":"https://fujitsuki.jp/"},
+ {"id":"s24","name":"茶珈堂","reading":"ちゃかふぇどう（アイビーホール1F）","emoji":"🍞","genre":"フレンチトースト","area":"東京","spot":"表参道","address":"東京都渋谷区渋谷4-4-25 アイビーホール1F","station":"表参道駅 徒歩5分／渋谷駅 徒歩10分","memo":"「日本一飲める」極厚フレンチトースト1,250円。新作チーズフレンチ1,800円はメープルがけ推奨。提供20分待ちの価値あり／不定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/1MBEF14YA6/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1303/A130301/13264075/"},
+ {"id":"s25","name":"しゃぶらく亭 歌舞伎町店","reading":"肉だけすき焼きの店","emoji":"🍢","genre":"和食・食堂・居酒屋","area":"東京","spot":"新宿・歌舞伎町","address":"東京都新宿区歌舞伎町1-9-5 三経61ビル1F","station":"新宿駅 徒歩5分","memo":"A4黒毛和牛大判2枚の関西風すき焼き。特上すき焼きセット2,800円・ご飯おかわり無料／11:30〜翌朝5時・無休","note":"優さん新着","fb":"https://www.facebook.com/share/r/1Bwn3kXBnr/?mibextid=wwXIfr","reserve":"https://www.hotpepper.jp/strJ003762897/"},
+ {"id":"s26","name":"キミ食堂","reading":"石垣島・1971年創業の老舗","emoji":"🍜","genre":"和食・食堂・居酒屋","area":"石垣","spot":"登野城","address":"沖縄県石垣市登野城319-6","station":"マックスバリュ石垣店 向かい","memo":"開店前から地元民が並ぶ名物味噌そばの店。三枚肉そば1,000円＋ちょこっと石垣牛丼400円／10:00〜16:00・木曜定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/1HaxfpBFhf/?mibextid=wwXIfr","tabelog":"https://tabelog.com/okinawa/A4705/A470501/47001399/"},
+ {"id":"s27","name":"旬家ばんちゃん","reading":"しゅんやばんちゃん（白保・食べログ2026選出）","emoji":"🍳","genre":"和食・食堂・居酒屋","area":"石垣","spot":"白保","address":"沖縄県石垣市白保13-1","station":"石垣空港から車8分／白保バス停 徒歩5分","memo":"名物は平飼い島たまごのふわっと厚いだし巻きたまご。ばんちゃん御膳2,800円（小鉢3種＋デザート付）／9:30〜13:30・水木定休・駐車場あり","note":"優さん新着","fb":"https://www.facebook.com/share/r/1C8hEg12kc/?mibextid=wwXIfr","tabelog":"https://tabelog.com/okinawa/A4705/A470501/47012017/"},
+ {"id":"s28","name":"なのりあ","reading":"四谷の一軒家和食","emoji":"🍚","genre":"和食・食堂・居酒屋","area":"東京","spot":"四谷三丁目","address":"東京都新宿区四谷（四谷四丁目交差点近くの路地裏・一軒家）","station":"四谷三丁目駅 徒歩5分","memo":"土日限定・予約制の極上朝ごはん3,300円。9品のおかず＋炊き立て土鍋ご飯食べ放題。夜は割烹営業／月曜定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/17pzfw7hiD/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1309/A130903/13317983/","reserve":"https://www.tablecheck.com/ja/nanoria"},
+ {"id":"s29","name":"虎峰","reading":"こほう（食べログアワード10年連続）","emoji":"🥡","genre":"高級中華","area":"東京","spot":"六本木","address":"東京都港区六本木3-14-16 ペンタビル1F","station":"六本木駅 徒歩6分","memo":"食べログ4.24・中華百名店。四川×広東ダブルシェフ体制のSignatureコース20品15,800円／12:00〜14:00・18:00〜22:00","note":"優さん新着","fb":"https://www.facebook.com/share/r/1GGYv87Ysz/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1307/A130701/13194122/"},
+ {"id":"s30","name":"焼肉鳥gg","reading":"じじ（鶏焼肉の百名店）","emoji":"🐔","genre":"焼肉","area":"東京","spot":"恵比寿","address":"東京都渋谷区恵比寿南1-2-10 ヱビスユニオンビル1F","station":"恵比寿駅西口 徒歩3分","memo":"食べログ3.61・百名店の鶏焼肉。銘柄鶏の一羽盛り4,990円。※食べるのが極端に遅いと会計を促されるお店／17:00〜22:30・不定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/189kaBqoWA/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1303/A130302/13195809/"},
+ {"id":"s31","name":"一膳めし 青木堂","reading":"あおきどう（創業69年）","emoji":"🍚","genre":"町中華","area":"福岡","spot":"大名","address":"福岡県福岡市中央区大名1-11-28","station":"赤坂駅・天神駅 徒歩圏","memo":"福岡民に愛されるレジェンド食堂。焼きめし650円＋目玉焼き2つトッピングが優勝スタイル／9:00〜15:00・17:00〜20:30・日祝定休","note":"優さん新着","ig":"https://www.instagram.com/reel/DcVNzd9Sve1/","tabelog":"https://tabelog.com/fukuoka/A4001/A400104/40005933/"},
+ {"id":"s32","name":"王餃子","reading":"わんぎょうざ（1964年創業）","emoji":"🥟","genre":"町中華","area":"福岡","spot":"中洲","address":"福岡県福岡市博多区中洲2-6-2","station":"中洲川端駅 徒歩圏","memo":"福岡最強町中華5選。中洲の〆の聖地、強火の鍋振り焼きめしと手作り餃子／15:30〜翌3:00・日祝定休","note":"優さん新着","ig":"https://www.instagram.com/reels/DbPsSkwSiTi/","tabelog":"https://tabelog.com/fukuoka/A4001/A400102/40000183/"},
+ {"id":"s33","name":"あっちゃん亭","reading":"西新の無添加ちゃんぽん・皿うどん","emoji":"🍜","genre":"町中華","area":"福岡","spot":"西新","address":"福岡県福岡市早良区西新5-1-23 1F","station":"西新駅 徒歩3分","memo":"福岡最強町中華5選。パリパリ細麺の皿うどんは福岡最強クラス。麺は3種から選べる／日曜定休","note":"優さん新着","ig":"https://www.instagram.com/reels/DbPsSkwSiTi/","tabelog":"https://tabelog.com/fukuoka/A4001/A400203/40000515/"},
+ {"id":"s34","name":"東京町寿司 ご縁 渋谷店","reading":"隠れ家すぎる地下の立ち食い寿司","emoji":"🍣","genre":"鮨","area":"東京","spot":"渋谷","address":"東京都渋谷区渋谷1-9-5 高橋ビルB1","station":"渋谷駅 徒歩4分","memo":"2026年7月オープン。名物「ご縁巻き」5円（1人1回）、握り200円台〜・赤酢シャリ。入口が分かりづらくインターホンで入店／18:15〜23:00・不定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/1DgNRkfoyW/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1303/A130301/13324614/"},
+ {"id":"s35","name":"Meat&Cheese ARK2nd 新宿店","reading":"シカゴピザ＆溶岩チーズパスタ","emoji":"🍝","genre":"イタリアン・パスタ","area":"東京","spot":"新宿・歌舞伎町","address":"東京都新宿区歌舞伎町1-6-6 橋本ビル2F","station":"JR新宿駅 徒歩4分","memo":"炎の演出つきカニボナーボルケーノパスタと明太子クリームパスタが二大名物。チーズの大洪水／¥3,000〜・無休","note":"優さん新着","fb":"https://www.facebook.com/share/r/1887DFbtWa/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1304/A130401/13243844/"},
+ {"id":"s36","name":"喫茶アメリカン","reading":"1982年創業・喫茶店百名店","emoji":"🥪","genre":"カフェ・喫茶","area":"東京","spot":"東銀座","address":"東京都中央区銀座4-11-7","station":"東銀座駅 徒歩1分","memo":"歌舞伎座裏の名喫茶。1.5斤＋卵10個超のスーパースペシャルたまごサンド1,300円。パン切れ次第終了・1時間制・現金のみ／月〜金のみ・土日祝休","note":"優さん新着","fb":"https://www.facebook.com/share/r/18sDjycL7Z/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1301/A130101/13051375/"},
+ {"id":"s37","name":"CAFE AALIYA","reading":"カフェ アリヤ（新宿で35年）","emoji":"🍞","genre":"フレンチトースト","area":"東京","spot":"新宿三丁目","address":"東京都新宿区新宿3-1-17 山本ビルB1F","station":"新宿三丁目駅 徒歩1分","memo":"カフェ百名店3度選出の老舗。外こんがり中じゅわのフレンチトーストミックス1,130円／9:00〜20:30・元日のみ休","note":"優さん新着","fb":"https://www.facebook.com/share/r/1LFBbq1ghK/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1304/A130401/13012089/"},
+ {"id":"s38","name":"パンとエスプレッソと博多っと","reading":"博多駅前のベーカリーカフェ","emoji":"🍞","genre":"フレンチトースト","area":"福岡","spot":"博多","address":"福岡県福岡市博多区博多駅前2-8-12 THE BLOSSOM HAKATA Premier 1F","station":"博多駅 徒歩5分","memo":"蜂蜜かけ放題のふわふわ鉄板フレンチトースト1,100円。オープン前から世界中の人が並ぶ／8:00〜18:00・不定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/19NZ4PQ4DN/?mibextid=wwXIfr","tabelog":"https://tabelog.com/fukuoka/A4001/A400101/40052518/"},
+ {"id":"s39","name":"MERCER BRUNCH ROPPONGI","reading":"マーサーブランチ（累計500万枚のフレトー）","emoji":"🍞","genre":"フレンチトースト","area":"東京","spot":"六本木","address":"東京都港区六本木4-2-35 VORT六本木Dual's 1F","station":"六本木駅 徒歩3分","memo":"「飲める」極厚ブリオッシュフレンチトーストのブランチ2,200円〜。新作キャラメリゼも◎。NY風おしゃれ空間／無休","note":"優さん新着","fb":"https://www.facebook.com/share/r/1DRX9j99n6/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1307/A130701/13149710/","reserve":"https://www.tablecheck.com/en/mercer-brunch"},
+ {"id":"s40","name":"もつ吉 本店","reading":"もつきち（芸能人お忍びの京風もつ焼き）","emoji":"🍢","genre":"和食・食堂・居酒屋","area":"東京","spot":"荻窪","address":"東京都杉並区上荻1-10-4 廣瀬ビル1F","station":"荻窪駅西口 徒歩3分","memo":"サイン色紙が壁一面の名店。名物京風もつ焼き825円・鉄板大トロホルモン・よだれ鶏。予算4,000円台／17:00〜23:00・年末年始のみ休","note":"優さん新着","fb":"https://www.facebook.com/share/r/1cu4hM39J6/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1319/A131906/13117193/"},
+ {"id":"s41","name":"恵比寿 鮨 はつめ","reading":"「高級をカジュアルに」のカウンター鮨","emoji":"🍣","genre":"鮨","area":"東京","spot":"恵比寿","address":"東京都渋谷区恵比寿（恵比寿駅 徒歩5分・路地裏）","station":"恵比寿駅 徒歩5分","memo":"二つ星店出身の大将。おまかせ22品（握り12貫＋一品10品）10,890円で人気なのに値上げなし。脳天ウニドッグも名物／17:00〜23:00・不定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/1BnH4bpi3f/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1303/A130302/13295650/","reserve":"https://www.tablecheck.com/en/shops/sushi-hatsume/reserve"},
+ {"id":"s42","name":"29テラス 代々木店","reading":"にくテラス（廃墟ビルの実力派街焼肉）","emoji":"🥩","genre":"焼肉","area":"東京","spot":"代々木","address":"東京都渋谷区千駄ヶ谷5-22-3 仰徳ビル1F","station":"代々木駅 徒歩2分","memo":"注文後に一枚ずつカット。厚切りネギタン・特上ハラミ・野菜盛り食べ放題（余りはスムージーに）。〆はスイカのビビン麺／17:00〜23:00・不定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/18DEZLMiEQ/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1304/A130403/13255250/"},
+ {"id":"s43","name":"日本橋 焼肉 正剛","reading":"せいごう（志尊淳が人生No.1と絶賛）","emoji":"🥩","genre":"焼肉","area":"東京","spot":"日本橋・兜町","address":"東京都中央区日本橋兜町9-7 SPCビルB1・1F","station":"茅場町駅11番出口 すぐ／日本橋駅 徒歩5分","memo":"肉寿司・極みユッケから飲める牛丼まで詰まったコース9,000円がボリューム満点。会食にも◎／17:00〜23:00・日曜定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/19Vt8LfiJs/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1302/A130203/13229383/","reserve":"https://www.tablecheck.com/en/shops/seigou-yakiniku/reserve"},
+ {"id":"s44","name":"かき家 こだはる 新橋店","reading":"日本で唯一の漆黒の牡蠣しゃぶ","emoji":"🦪","genre":"和食・食堂・居酒屋","area":"東京","spot":"新橋","address":"東京都港区新橋3-8-8 神野ビル2F","station":"新橋駅 徒歩5分","memo":"全国の牡蠣を年中仕入れる牡蠣専門酒場。イカ墨or麻辣の牡蠣しゃぶ＆〆の牡蠣出汁イカ墨チーズリゾット。牡蠣フルMAXコース7,000円／17:00〜22:30・日曜定休","note":"優さん新着","fb":"https://www.facebook.com/share/r/19hc9bMR7y/?mibextid=wwXIfr","tabelog":"https://tabelog.com/tokyo/A1301/A130103/13176423/"}
+]
+</script>
+<script id="app">
+/* ============================================================
+   優ベストチョイス — 投稿できるグルメ掲示板
+   データは #shops-data の JSON に保存。投稿すると buildDoc() で
+   ページ全体を組み直し artifact.publish() で新バージョンとして
+   保存 → 開いている全員の画面が最新版に更新される。
+   ============================================================ */
+
+const FONT_LINKS =
+  '<meta name="viewport" content="width=device-width, initial-scale=1.0">' +
+  '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏆</text></svg>">' +
+  '<link rel="preconnect" href="https://fonts.googleapis.com">' +
+  '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' +
+  '<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">';
+
+const STYLES = `
+  :root{
+    --bg:#f5f7fa; --bg2:#eceff5; --paper:#ffffff; --paper-hi:#ffffff;
+    --ink:#1a2433; --sub:#5b6b80; --line:#dde4ee;
+    --cyan:#0aa392; --orange:#e8611c; --blue:#1f6fd6;
+    --cyan-soft:rgba(10,163,146,.10); --orange-soft:rgba(232,97,28,.10); --blue-soft:rgba(31,111,214,.10);
+    --shadow:0 6px 22px rgba(30,50,80,.09);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:"Noto Sans JP",system-ui,sans-serif;
+    background:
+      radial-gradient(900px 420px at 80% -10%, rgba(31,111,214,.07), transparent 60%),
+      radial-gradient(700px 380px at 5% 8%, rgba(10,163,146,.06), transparent 55%),
+      var(--bg);
+    color:var(--ink); line-height:1.65;
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  header{text-align:center;padding:52px 16px 14px}
+  .badge-top{
+    display:inline-flex;align-items:center;gap:10px;font-family:"Oswald",sans-serif;
+    background:linear-gradient(90deg,var(--cyan),var(--blue),var(--orange));
+    color:#fff;font-weight:700;font-size:.8rem;letter-spacing:.3em;
+    padding:6px 20px 5px 24px;border-radius:4px;margin-bottom:18px;text-transform:uppercase;
+  }
+  h1{font-weight:900;font-size:clamp(2rem,5.5vw,3.2rem);letter-spacing:.06em;line-height:1.25}
+  h1 .yu{background:linear-gradient(120deg,var(--cyan),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .tagline{color:var(--sub);margin-top:12px;font-size:.93rem}
+  .tagline b{color:var(--ink)}
+  .tri-line{margin-top:10px;font-family:"Oswald",sans-serif;font-size:.8rem;letter-spacing:.35em;color:var(--sub);text-transform:uppercase}
+  .tri-line .s{color:var(--cyan)} .tri-line .b{color:var(--blue)} .tri-line .r{color:var(--orange)}
+
+  .panel{
+    background:linear-gradient(180deg,var(--paper-hi),var(--paper));
+    border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+    margin:30px auto 8px;position:relative;overflow:hidden;
+  }
+  .panel::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--blue),var(--orange))}
+  .panel-title{text-align:center;font-family:"Oswald",sans-serif;font-weight:600;color:var(--sub);font-size:.82rem;letter-spacing:.35em;text-transform:uppercase;padding-top:20px}
+
+  .map-card{padding:0 10px 6px}
+  #japan-map{display:block;margin:0 auto;max-width:640px;width:100%;height:auto}
+  .island{fill:#e6ecf4;stroke:#bccbdd;stroke-width:2;stroke-linejoin:round}
+  .pin-group{cursor:pointer}
+  .pin-tokyo .dot{fill:var(--blue)} .pin-tokyo .pulse{stroke:var(--blue)}
+  .pin-fukuoka .dot{fill:var(--orange)} .pin-fukuoka .pulse{stroke:var(--orange)}
+  .pin-ishigaki .dot{fill:var(--cyan)} .pin-ishigaki .pulse{stroke:var(--cyan)}
+  .pin-okinawa .dot{fill:#8b5cf6} .pin-okinawa .pulse{stroke:#8b5cf6}
+  .pin-group .pulse{fill:none;stroke-width:2;opacity:.7;transform-box:fill-box;transform-origin:center;animation:pulse 2s ease-out infinite}
+  @keyframes pulse{0%{transform:scale(.5);opacity:.8}100%{transform:scale(2.1);opacity:0}}
+  @media (prefers-reduced-motion: reduce){.pin-group .pulse{animation:none;opacity:0}}
+  .pin-label{font-family:"Noto Sans JP",sans-serif;font-weight:700;font-size:15px}
+  .pin-count{font-family:"Oswald",sans-serif;font-weight:700;font-size:13px;fill:#0b1320}
+  .map-hint{text-align:center;color:var(--sub);font-size:.78rem;padding-bottom:14px}
+
+  .post-card{padding:6px 22px 22px}
+  .post-form{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:760px;margin:14px auto 0}
+  .post-form .full{grid-column:1 / -1}
+  .field label{display:block;font-size:.75rem;font-weight:700;color:var(--sub);margin-bottom:5px;letter-spacing:.05em}
+  .field input,.field select,.field textarea{
+    width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:8px;
+    color:var(--ink);font-family:inherit;font-size:.88rem;padding:10px 12px;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--cyan);outline-offset:1px;border-color:var(--cyan)}
+  .field input::placeholder,.field textarea::placeholder{color:#93a4b8}
+  .post-actions{grid-column:1 / -1;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .post-btn{
+    font-family:inherit;font-weight:900;font-size:.95rem;letter-spacing:.05em;
+    background:linear-gradient(90deg,var(--cyan),var(--blue));color:#fff;
+    border:none;border-radius:8px;padding:12px 30px;cursor:pointer;transition:.15s;
+  }
+  .post-btn:hover{filter:brightness(1.12)}
+  .post-btn:disabled{background:var(--line);color:var(--sub);cursor:not-allowed;filter:none}
+  .post-btn:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+  #post-status{font-size:.82rem;color:var(--sub)}
+  #post-status.ok{color:var(--cyan)} #post-status.err{color:var(--orange)}
+  .post-note{max-width:760px;margin:10px auto 0;font-size:.76rem;color:var(--sub)}
+
+  .filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:24px 0 6px}
+  .chip{
+    border:1px solid var(--line);background:var(--paper);color:var(--sub);border-radius:6px;
+    padding:7px 16px;font-size:.84rem;font-weight:700;font-family:inherit;cursor:pointer;transition:.15s;
+  }
+  .chip:hover{border-color:var(--cyan);color:var(--cyan)}
+  .chip:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+  .chip.active{background:var(--cyan);border-color:var(--cyan);color:#fff}
+  .chip.area.active{background:var(--blue);border-color:var(--blue);color:#fff}
+  .count-note{text-align:center;color:var(--sub);font-size:.8rem;margin-bottom:10px;font-family:"Oswald",sans-serif;letter-spacing:.15em}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;padding:14px 0 60px}
+  .card{
+    background:linear-gradient(180deg,var(--paper-hi),var(--paper));
+    border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);
+    padding:20px 20px 16px;display:flex;flex-direction:column;gap:10px;
+    transition:transform .15s,border-color .15s;position:relative;overflow:hidden;
+  }
+  .card::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:linear-gradient(180deg,var(--cyan),var(--blue));opacity:.9}
+  .card:hover{transform:translateY(-3px);border-color:#a9bdd6}
+  .card-head{display:flex;align-items:flex-start;gap:12px}
+  .genre-emoji{font-size:1.45rem;line-height:1;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:9px}
+  .card h3{font-size:1.1rem;font-weight:900;letter-spacing:.02em}
+  .card h3 small{display:block;font-size:.73rem;color:var(--sub);font-weight:500;letter-spacing:.05em;margin-top:2px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-size:.71rem;font-weight:700;padding:3px 10px;border-radius:4px;letter-spacing:.03em}
+  .tag.genre{background:var(--cyan-soft);color:var(--cyan);border:1px solid rgba(47,214,196,.3)}
+  .tag.area{background:var(--blue-soft);color:var(--blue);border:1px solid rgba(63,155,255,.3)}
+  .tag.note{background:var(--orange-soft);color:var(--orange);border:1px solid rgba(255,122,47,.3)}
+  .tag.star{background:rgba(212,160,20,.12);color:#a97e00;border:1px solid rgba(212,160,20,.4)}
+  .star-check{display:flex;align-items:center;gap:8px;font-size:.85rem;color:#a97e00;font-weight:700;cursor:pointer}
+  .star-check input{width:16px;height:16px;accent-color:#d4a014;cursor:pointer}
+  .info{list-style:none;font-size:.82rem;color:var(--sub);display:flex;flex-direction:column;gap:4px}
+  .info li{display:flex;gap:8px;align-items:baseline}
+  .info .ico{flex:none}
+  .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}
+  .btn{
+    text-decoration:none;font-size:.77rem;font-weight:700;padding:7px 13px;border-radius:6px;
+    display:inline-flex;align-items:center;gap:5px;border:1px solid transparent;transition:.15s;
+  }
+  .btn:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+  .btn-fb{background:rgba(78,116,189,.12);color:#3b5998;border-color:rgba(78,116,189,.35)}
+  .btn-fb:hover{background:#4e74bd;color:#fff}
+  .btn-ig{background:rgba(207,74,145,.10);color:#c13584;border-color:rgba(207,74,145,.35)}
+  .btn-ig:hover{background:#cf4a91;color:#fff}
+  .btn-tabelog{background:var(--orange-soft);color:var(--orange);border-color:rgba(255,122,47,.35)}
+  .btn-tabelog:hover{background:var(--orange);color:#fff}
+  .btn-reserve{background:var(--cyan-soft);color:var(--cyan);border-color:rgba(47,214,196,.35)}
+  .btn-reserve:hover{background:var(--cyan);color:#fff}
+  .btn-map{background:rgba(91,107,128,.08);color:var(--sub);border-color:rgba(91,107,128,.3)}
+  .btn-map:hover{background:#5b6b80;color:#fff}
+  .card.mystery{border-style:dashed;border-color:#c2cfe0}
+  .card.mystery::before{background:var(--orange)}
+  .card .del-btn{
+    position:absolute;top:10px;right:10px;background:none;border:1px solid var(--line);
+    color:var(--sub);border-radius:6px;width:26px;height:26px;cursor:pointer;font-size:.8rem;line-height:1;
+  }
+  .card .del-btn:hover{border-color:var(--orange);color:var(--orange)}
+  footer{text-align:center;color:var(--sub);font-size:.77rem;padding:28px 16px 44px;border-top:1px solid var(--line)}
+`;
+
+const MARKUP = `
+<header>
+  <div class="badge-top">YU'S BEST CHOICE</div>
+  <h1><span class="yu">優</span>ベストチョイス</h1>
+  <p class="tagline">〜 <b>佐藤 優</b> セレクション 〜　行きたいお店をぜんぶここに。気になる投稿を見つけたら下のフォームから追加。</p>
+  <p class="tri-line"><span class="s">SWIM</span> ／ <span class="b">BIKE</span> ／ <span class="r">RUN</span> … AND <b>EAT</b> 🏊🚴🏃🍜</p>
+</header>
+
+<div class="wrap">
+
+  <div class="panel map-card">
+    <div class="panel-title">Nippon Gourmet Map</div>
+    <svg id="japan-map" viewBox="0 0 640 520" role="img" aria-label="日本地図。東京と福岡にお店があります">
+      <path class="island" d="M470,52 L516,40 L556,58 L566,92 L544,118 L508,112 L494,132 L470,120 L452,90 Z"/>
+      <path class="island" d="M470,150 C476,176 466,204 448,228 C430,252 404,268 376,282 C348,296 320,306 292,316 C264,326 240,330 216,340 C198,347 184,358 168,364 C150,371 132,370 122,360 C114,351 118,338 132,330 C148,321 168,320 186,312 C206,303 220,288 238,276 C258,262 280,252 300,238 C322,222 342,206 358,186 C374,166 384,144 396,128 C406,114 422,106 438,110 C456,114 466,132 470,150 Z"/>
+      <path class="island" d="M244,352 L286,344 L306,358 L296,378 L262,384 L240,372 Z"/>
+      <path class="island" d="M156,384 L188,378 L206,394 L202,422 L180,444 L156,436 L144,410 Z"/>
+      <circle class="island" cx="96" cy="486" r="7"/>
+      <circle class="island" cx="76" cy="498" r="4"/>
+      <circle class="island" cx="60" cy="506" r="3"/>
+      <g class="pin-group pin-tokyo" data-area="東京" transform="translate(400,236)" role="button" tabindex="0" aria-label="東京のお店を表示">
+        <circle class="pulse" r="14"/><circle class="dot" r="9"/><circle r="16" fill="transparent"/>
+        <g transform="translate(14,-26)">
+          <rect x="0" y="-16" rx="6" width="92" height="30" fill="#0b1320" stroke="#31517a"/>
+          <text class="pin-label" x="12" y="5" style="fill:#eaf1f9">東京</text>
+          <circle cx="70" cy="-1" r="10" fill="#3f9bff"/>
+          <text class="pin-count" x="70" y="3.5" text-anchor="middle" id="count-tokyo">0</text>
+        </g>
+      </g>
+      <g class="pin-group pin-fukuoka" data-area="福岡" transform="translate(176,404)" role="button" tabindex="0" aria-label="福岡のお店を表示">
+        <circle class="pulse" r="14"/><circle class="dot" r="9"/><circle r="16" fill="transparent"/>
+        <g transform="translate(-108,-8)">
+          <rect x="0" y="-16" rx="6" width="92" height="30" fill="#0b1320" stroke="#31517a"/>
+          <text class="pin-label" x="12" y="5" style="fill:#eaf1f9">福岡</text>
+          <circle cx="70" cy="-1" r="10" fill="#ff7a2f"/>
+          <text class="pin-count" x="70" y="3.5" text-anchor="middle" id="count-fukuoka">0</text>
+        </g>
+      </g>
+      <g class="pin-group pin-okinawa pin-optional" data-area="沖縄" transform="translate(96,486)" role="button" tabindex="0" aria-label="沖縄のお店を表示" style="display:none">
+        <circle class="pulse" r="12"/><circle class="dot" r="8"/><circle r="15" fill="transparent"/>
+        <g transform="translate(14,-26)">
+          <rect x="0" y="-16" rx="6" width="92" height="30" fill="#0b1320" stroke="#31517a"/>
+          <text class="pin-label" x="12" y="5" style="fill:#eaf1f9">沖縄</text>
+          <circle cx="70" cy="-1" r="10" fill="#8b5cf6"/>
+          <text class="pin-count" x="70" y="3.5" text-anchor="middle">0</text>
+        </g>
+      </g>
+      <g class="pin-group pin-ishigaki pin-optional" data-area="石垣" transform="translate(76,498)" role="button" tabindex="0" aria-label="石垣のお店を表示" style="display:none">
+        <circle class="pulse" r="12"/><circle class="dot" r="8"/><circle r="15" fill="transparent"/>
+        <g transform="translate(-106,10)">
+          <rect x="0" y="-16" rx="6" width="92" height="30" fill="#0b1320" stroke="#31517a"/>
+          <text class="pin-label" x="12" y="5" style="fill:#eaf1f9">石垣</text>
+          <circle cx="70" cy="-1" r="10" fill="#2fd6c4"/>
+          <text class="pin-count" x="70" y="3.5" text-anchor="middle">0</text>
+        </g>
+      </g>
+    </svg>
+    <p class="map-hint">📍 ピンをタップするとそのエリアのお店だけ表示されます</p>
+  </div>
+
+  <div class="panel post-card">
+    <div class="panel-title">Post a Shop ─ お店を投稿</div>
+    <form class="post-form" id="post-form">
+      <div class="field full">
+        <label for="f-url">FacebookやInstagramの投稿URL（必須）</label>
+        <input id="f-url" type="url" required placeholder="https://www.facebook.com/share/r/... をここに貼り付け">
+      </div>
+      <div class="field">
+        <label for="f-name">店名（わかれば）</label>
+        <input id="f-name" type="text" placeholder="空欄なら「確認中」で登録されます">
+      </div>
+      <div class="field">
+        <label for="f-spot">場所・最寄り（わかれば）</label>
+        <input id="f-spot" type="text" placeholder="例：新宿、博多 など">
+      </div>
+      <div class="field">
+        <label for="f-area">エリア</label>
+        <select id="f-area">
+          <option value="東京">東京</option>
+          <option value="福岡">福岡</option>
+          <option value="沖縄">沖縄</option>
+          <option value="石垣">石垣</option>
+          <option value="その他">その他</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-genre">ジャンル</label>
+        <select id="f-genre"></select>
+      </div>
+      <div class="field full">
+        <label for="f-memo">ひとことメモ（任意）</label>
+        <input id="f-memo" type="text" placeholder="例：つけ麺がうまそう。今度のライド帰りに寄りたい">
+      </div>
+      <div class="field full">
+        <label class="star-check"><input type="checkbox" id="f-star"> ⭐ 絶対行きたい印を付ける</label>
+      </div>
+      <div class="post-actions">
+        <button type="submit" class="post-btn" id="post-btn" disabled>接続確認中…</button>
+        <span id="post-status" role="status"></span>
+      </div>
+    </form>
+    <p class="post-note">URLを貼って投稿すると、この掲示板を開いている全員の画面にすぐ反映されます。店名などが空欄でも「確認中」カードとして載るので、あとから整理できます。</p>
+  </div>
+
+  <div class="filters" id="area-filters">
+    <button type="button" class="chip area active" data-area="all">🗾 すべて</button>
+    <button type="button" class="chip area" data-area="東京">東京</button>
+    <button type="button" class="chip area" data-area="福岡">福岡</button>
+    <button type="button" class="chip area" data-area="沖縄">沖縄</button>
+    <button type="button" class="chip area" data-area="石垣">石垣</button>
+    <button type="button" class="chip area" data-area="その他">その他</button>
+  </div>
+  <div class="filters" id="genre-filters">
+    <button type="button" class="chip active" data-genre="all">全ジャンル</button>
+  </div>
+  <p class="count-note"><span id="shown-count"></span> SHOPS</p>
+
+  <div class="grid" id="grid"></div>
+</div>
+
+<footer>
+  優ベストチョイス — 佐藤優さんおすすめのお店掲示板 ／ 出典：Facebook・Instagramのグルメ投稿<br>
+  営業時間・価格は投稿時点の情報です。おでかけ前に公式情報をご確認ください。
+</footer>
+`;
+
+/* ---------- ページ組み立て ---------- */
+document.head.insertAdjacentHTML("beforeend", FONT_LINKS + "<style>" + STYLES + "</style>");
+
+function boot(){
+const root = document.createElement("div");
+root.id = "root";
+root.innerHTML = MARKUP;
+document.body.appendChild(root);
+
+/* ---------- データ ---------- */
+const SHOPS = JSON.parse(document.getElementById("shops-data").textContent);
+const GENRE_EMOJI = {"町中華":"🍚","ラーメン・つけ麺":"🍜","焼肉":"🥩","鮨":"🍣","フレンチトースト":"🍞","カフェ・喫茶":"☕","ピザ":"🍕","イタリアン・パスタ":"🍝","和食・食堂・居酒屋":"🍢","高級中華":"🥡","バーガー・BBQ":"🍔","未分類":"❓"};
+/* 表示順の基本リスト。データに新しいジャンルがあれば末尾に自動追加される */
+const GENRE_ORDER = Object.keys(GENRE_EMOJI);
+const GENRES = [...new Set([...GENRE_ORDER.filter(g => g === "鮨" || SHOPS.some(s => s.genre === g)), ...SHOPS.map(s => s.genre)])];
+
+let areaFilter = "all";
+let genreFilter = "all";
+
+function esc(s){
+  return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function gmap(s){
+  return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(s.name + " " + s.address);
+}
+
+function render(){
+  const grid = document.getElementById("grid");
+  grid.innerHTML = "";
+  let shown = 0;
+  SHOPS.forEach(s=>{
+    const okArea  = areaFilter === "all" || s.area === areaFilter;
+    const okGenre = genreFilter === "all" || s.genre === genreFilter;
+    if(!okArea || !okGenre) return;
+    shown++;
+    const card = document.createElement("div");
+    card.className = "card" + (s.mystery ? " mystery" : "");
+    card.innerHTML = `
+      <div class="card-head">
+        <div class="genre-emoji">${esc(s.emoji || GENRE_EMOJI[s.genre] || "🍽️")}</div>
+        <h3>${esc(s.name)}<small>${esc(s.reading || "")}</small></h3>
+      </div>
+      <div class="tags">
+        ${s.star ? `<span class="tag star">⭐ 絶対行きたい</span>` : ""}
+        <span class="tag genre">${esc(s.genre)}</span>
+        <span class="tag area">${esc(s.area)}・${esc(s.spot || "未確定")}</span>
+        ${s.note ? `<span class="tag note">${esc(s.note)}</span>` : ""}
+        ${s.date ? `<span class="tag note">投稿 ${esc(s.date)}</span>` : ""}
+      </div>
+      <ul class="info">
+        <li><span class="ico">🗾</span><span>${esc(s.address || "詳細はこれから")}</span></li>
+        <li><span class="ico">🚉</span><span>${esc(s.station || "—")}</span></li>
+        ${s.memo ? `<li><span class="ico">📝</span><span>${esc(s.memo)}</span></li>` : ""}
+      </ul>
+      <div class="links">
+        ${s.fb ? `<a class="btn btn-fb" href="${esc(s.fb)}" target="_blank" rel="noopener">▶ FB投稿</a>` : ""}
+        ${s.ig ? `<a class="btn btn-ig" href="${esc(s.ig)}" target="_blank" rel="noopener">▶ IG投稿</a>` : ""}
+        ${s.tabelog ? `<a class="btn btn-tabelog" href="${esc(s.tabelog)}" target="_blank" rel="noopener">🍴 食べログ</a>` : ""}
+        ${s.reserve ? `<a class="btn btn-reserve" href="${esc(s.reserve)}" target="_blank" rel="noopener">📅 予約する</a>` : ""}
+        ${s.official ? `<a class="btn btn-reserve" href="${esc(s.official)}" target="_blank" rel="noopener">🏠 公式サイト</a>` : ""}
+        ${s.address && !s.mystery ? `<a class="btn btn-map" href="${gmap(s)}" target="_blank" rel="noopener">🗺️ 地図</a>` : ""}
+      </div>`;
+    if(s.submitted && canWrite !== false){
+      const del = document.createElement("button");
+      del.type = "button";
+      del.className = "del-btn";
+      del.title = "この投稿を削除";
+      del.setAttribute("aria-label", s.name + " を削除");
+      del.textContent = "✕";
+      del.addEventListener("click", ()=> removeShop(s.id));
+      card.appendChild(del);
+    }
+    grid.appendChild(card);
+  });
+  document.getElementById("shown-count").textContent = shown;
+  document.querySelectorAll(".pin-group").forEach(pin=>{
+    const n = SHOPS.filter(s=>s.area===pin.dataset.area).length;
+    const cnt = pin.querySelector(".pin-count");
+    if(cnt) cnt.textContent = n;
+    if(pin.classList.contains("pin-optional")) pin.style.display = n ? "" : "none";
+  });
+}
+
+/* ジャンルのチップと投稿フォームの選択肢はデータから自動生成 */
+const genreFilters = document.getElementById("genre-filters");
+const genreSelect = document.getElementById("f-genre");
+GENRES.forEach(g=>{
+  const chip = document.createElement("button");
+  chip.type = "button"; chip.className = "chip"; chip.dataset.genre = g;
+  chip.textContent = `${GENRE_EMOJI[g] || "🍽️"} ${g}`;
+  genreFilters.appendChild(chip);
+  const opt = document.createElement("option");
+  opt.value = g; opt.textContent = `${GENRE_EMOJI[g] || "🍽️"} ${g}`;
+  genreSelect.appendChild(opt);
+});
+genreSelect.value = "未分類";
+
+function setActive(groupId, attr, value){
+  document.querySelectorAll(`#${groupId} .chip`).forEach(c=>{
+    c.classList.toggle("active", c.dataset[attr] === value);
+  });
+}
+document.querySelectorAll("#area-filters .chip").forEach(chip=>{
+  chip.addEventListener("click", ()=>{ areaFilter = chip.dataset.area; setActive("area-filters","area",areaFilter); render(); });
+});
+document.querySelectorAll("#genre-filters .chip").forEach(chip=>{
+  chip.addEventListener("click", ()=>{ genreFilter = chip.dataset.genre; setActive("genre-filters","genre",genreFilter); render(); });
+});
+document.querySelectorAll(".pin-group").forEach(pin=>{
+  const go = ()=>{
+    areaFilter = pin.dataset.area;
+    setActive("area-filters","area",areaFilter);
+    render();
+    document.getElementById("area-filters").scrollIntoView({behavior:"smooth"});
+  };
+  pin.addEventListener("click", go);
+  pin.addEventListener("keydown", e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); go(); } });
+});
+
+/* ---------- 掲示板の保存（artifact capability） ---------- */
+let art = null;          // artifact 名前空間（null = この画面では保存不可）
+let canWrite = null;     // null=不明 / true / false（not_writer を受けたら false）
+const postBtn = document.getElementById("post-btn");
+const postStatus = document.getElementById("post-status");
+
+function buildDoc(shops){
+  const appSource = document.getElementById("app").textContent;
+  const json = JSON.stringify(shops, null, 1).replace(/</g, "\\u003c");
+  return '<!doctype html>\n<html lang="ja">\n<head>\n<meta charset="utf-8">\n<title>優ベストチョイス</title>\n</head>\n<body>\n' +
+    '<script type="application/json" id="shops-data">\n' + json + '\n<\/script>\n' +
+    '<script id="app">' + appSource + '<\/script>\n' +
+    '</body>\n</html>\n';
+}
+
+function setStatus(msg, cls){
+  postStatus.textContent = msg;
+  postStatus.className = cls || "";
+}
+
+function markReadOnly(){
+  canWrite = false;
+  postBtn.disabled = true;
+  postBtn.textContent = "閲覧専用";
+  setStatus("この画面は閲覧専用です。投稿にはこのページの編集権限（共有設定で付与）が必要です。", "err");
+  render();
+}
+
+async function publishShops(shops, doneMsg){
+  if(!art){ setStatus("この画面からは保存できません。claude.ai のアーティファクトページで開いてください。", "err"); return; }
+  postBtn.disabled = true;
+  setStatus("保存中…（全員の画面に反映されます）");
+  try{
+    await art.publish(buildDoc(shops));
+    setStatus(doneMsg, "ok"); // 直後にページ全体が新バージョンへ再読み込みされる
+  }catch(e){
+    const code = e && e.code;
+    if(code === "conflict"){
+      setStatus("他の人が先に更新しました。ページが最新版に更新されます。", "err");
+    }else if(code === "not_writer" || code === "not_granted" || code === "consent_required"){
+      markReadOnly();
+    }else if(code === "rate_limited"){
+      postBtn.disabled = false;
+      setStatus("投稿が続きすぎました。少し待ってからもう一度どうぞ。", "err");
+    }else{
+      postBtn.disabled = false;
+      setStatus("保存に失敗しました。時間をおいてもう一度お試しください。", "err");
+    }
+  }
+}
+
+document.getElementById("post-form").addEventListener("submit", async e=>{
+  e.preventDefault();
+  const url = document.getElementById("f-url").value.trim();
+  if(!/^https?:\/\//.test(url)){ setStatus("URLは https:// から貼り付けてください。", "err"); return; }
+  const name  = document.getElementById("f-name").value.trim();
+  const spot  = document.getElementById("f-spot").value.trim();
+  const area  = document.getElementById("f-area").value;
+  const genre = document.getElementById("f-genre").value;
+  const memo  = document.getElementById("f-memo").value.trim();
+
+  const entry = {
+    id: "u" + Date.now().toString(36),
+    name: name || "（新着・お店確認中）",
+    reading: name ? "" : "URLだけ先に投稿",
+    emoji: GENRE_EMOJI[genre] || "🍽️",
+    genre, area,
+    spot: spot || "未確定",
+    address: "", station: "",
+    memo: memo || "",
+    submitted: true,
+    date: new Date().toISOString().slice(0,10),
+    mystery: !name
+  };
+  if(document.getElementById("f-star").checked) entry.star = true;
+  if(!name) entry.note = "確認中";
+  if(/instagram\.com/.test(url)) entry.ig = url;
+  else if(/tabelog\.com/.test(url)) entry.tabelog = url;
+  else if(/facebook\.com|fb\.watch/.test(url)) entry.fb = url;
+  else entry.official = url;
+
+  await publishShops(SHOPS.concat([entry]), "投稿しました！");
+});
+
+function removeShop(id){
+  const s = SHOPS.find(x=>x.id===id);
+  if(!s) return;
+  if(!confirm(`「${s.name}」の投稿を削除しますか？（全員の画面から消えます）`)) return;
+  publishShops(SHOPS.filter(x=>x.id!==id), "削除しました。");
+}
+
+/* capability の解決（後から届く。届かなければ 10 秒で null） */
+(window.claude && window.claude.use ? window.claude.use("artifact") : Promise.resolve(null)).then(ns=>{
+  art = ns;
+  if(art){
+    postBtn.disabled = false;
+    postBtn.textContent = "掲示板に投稿";
+    setStatus("");
+  }else{
+    postBtn.disabled = true;
+    postBtn.textContent = "投稿できません";
+    setStatus("この画面では閲覧のみです。claude.ai のアーティファクトページで開くと投稿できます。", "err");
+  }
+});
+
+render();
+} /* boot() ここまで */
+
+if(document.body) boot();
+else document.addEventListener("DOMContentLoaded", boot);
+</script>
+
+</body>
+</html>
